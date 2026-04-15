@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Carrera's - Servicios automotrices premium: detailing, reparaciones, camber y pintura profesional." />
+  <title>Carrera's | Servicios Automotrices Premium</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,300;0,400;0,600;0,700;1,300&family=Barlow+Condensed:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#inicio" class="logo">
+        <span class="logo__mark">C</span>
+        <span class="logo__text">arrera's</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#inicio"   class="nav__link">Inicio</a></li>
+          <li><a href="#servicios" class="nav__link">Servicios</a></li>
+          <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+          <li><a href="#galeria"  class="nav__link">Galería</a></li>
+          <li><a href="#contacto" class="nav__link nav__link--cta">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg">
+      <img
+        src="https://images.unsplash.com/photo-1614026480218-c834e2a0cbf1?auto=format&fit=crop&w=1800&q=80"
+        alt="Auto deportivo en taller premium"
+        class="hero__img"
+      />
+      <div class="hero__overlay"></div>
+    </div>
+
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal">Servicios Automotrices Premium</p>
+      <h1 class="hero__title reveal">
+        Tu auto,<br /><em>como nuevo.</em>
+      </h1>
+      <p class="hero__sub reveal">
+        Detailing · Reparaciones · Camber · Pintura profesional
+      </p>
+      <div class="hero__actions reveal">
+        <a href="#contacto" class="btn btn--primary">Solicitar servicio</a>
+        <a href="#servicios" class="btn btn--ghost">Ver servicios</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint">
+      <span>Carrera's</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== STATS BAR ========== -->
+  <div class="stats">
+    <div class="stats__inner">
+      <div class="stat reveal">
+        <strong class="stat__num" data-target="0">0</strong>
+        <span class="stat__label">Autos atendidos</span>
+      </div>
+      <div class="stat reveal">
+        <strong class="stat__num" data-target="0">0</strong>
+        <span class="stat__label">Años de experiencia</span>
+      </div>
+      <div class="stat reveal">
+        <strong class="stat__num" data-target="100">0</strong>
+        <span class="stat__label">% Satisfacción</span>
+      </div>
+      <div class="stat reveal">
+        <strong class="stat__num" data-target="4">0</strong>
+        <span class="stat__label">Especialidades</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== SERVICIOS ========== -->
+  <section class="section services" id="servicios">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-tag">Lo que hacemos</span>
+        <h2 class="section-title">Nuestros <em>Servicios</em></h2>
+      </div>
+
+      <div class="services__grid">
+
+        <!-- Detailing -->
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <i class="fa-solid fa-car-side"></i>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=600&q=70"
+            alt="Detailing de auto"
+            class="service-card__img"
+          />
+          <div class="service-card__body">
+            <h3 class="service-card__title">Detailing Premium</h3>
+            <p class="service-card__desc">
+              Lavado profundo, pulido de pintura, encerado protector y tratamiento interior. Dejamos tu vehículo impecable, como salido de agencia.
+            </p>
+            <ul class="service-card__list">
+              <li>Lavado exterior e interior</li>
+              <li>Pulido y encerado</li>
+              <li>Tratamiento de cuero</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Reparaciones -->
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <i class="fa-solid fa-wrench"></i>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=600&q=70"
+            alt="Reparaciones automotrices"
+            class="service-card__img"
+          />
+          <div class="service-card__body">
+            <h3 class="service-card__title">Reparaciones Básicas</h3>
+            <p class="service-card__desc">
+              Mantenimiento esencial para mantener tu auto en óptimas condiciones. Servicio rápido y con garantía en cada trabajo.
+            </p>
+            <ul class="service-card__list">
+              <li>Cambio de aceite</li>
+              <li>Sistema de frenos</li>
+              <li>Batería y eléctrico</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Pulimiento -->
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <i class="fa-solid fa-circle-notch"></i>
+          </div>
+          <img
+            src="imagenes/pulimineto.jpeg"
+            alt="Pulimiento de pintura"
+            class="service-card__img"
+          />
+          <div class="service-card__body">
+            <h3 class="service-card__title">Pulimiento de Pintura</h3>
+            <p class="service-card__desc">
+              Alineación especializada para mejorar el rendimiento, la estabilidad y el estilo de tu vehículo con precisión milimétrica.
+            </p>
+            <ul class="service-card__list">
+              <li>Camber estético y funcional</li>
+              <li>Alineación 3D</li>
+              <li>Geometría de suspensión</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Pintura -->
+        <article class="service-card reveal">
+          <div class="service-card__icon">
+            <i class="fa-solid fa-spray-can-sparkles"></i>
+          </div>
+          <img
+            src="imagenes/pintura.jpeg"
+            alt="Pintura automotriz"
+            class="service-card__img"
+          />
+          <div class="service-card__body">
+            <h3 class="service-card__title">Pintura Automotriz</h3>
+            <p class="service-card__desc">
+              Pintura profesional con acabado de fábrica. Desde retoques puntuales hasta repintado completo con colores personalizados.
+            </p>
+            <ul class="service-card__list">
+              <li>Pintura completa o parcial</li>
+              <li>Colores personalizados</li>
+              <li>Acabado de showroom</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SOBRE NOSOTROS ========== -->
+  <section class="section about" id="nosotros">
+    <div class="about__img-col">
+      <div class="about__img-wrap reveal">
+        <img
+          src="imagenes/portada.jpeg"
+          alt="Técnico trabajando en auto"
+        />
+        <div class="about__badge">
+          <span class="about__badge-num">1+</span>
+          <span class="about__badge-text">Años de experiencia</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="about__text-col">
+      <div class="section-head reveal">
+        <span class="section-tag">Quiénes somos</span>
+        <h2 class="section-title">Pasión por los<br /><em>automóviles</em></h2>
+      </div>
+      <p class="about__p reveal">
+        En <strong>Carrera's</strong> somos más que un taller automotriz. Somos entusiastas del motor con un compromiso inquebrantable con la calidad. Cada vehículo que entra recibe atención personalizada y cuidado de primer nivel.
+      </p>
+      <p class="about__p reveal">
+        Nuestro equipo combina técnica, experiencia y pasión para ofrecer resultados que superan las expectativas. Trabajamos con los mejores productos del mercado.
+      </p>
+      <div class="about__pillars reveal">
+        <div class="pillar">
+          <i class="fa-solid fa-shield-halved"></i>
+          <span>Garantía en cada servicio</span>
+        </div>
+        <div class="pillar">
+          <i class="fa-solid fa-star"></i>
+          <span>Calidad premium</span>
+        </div>
+        <div class="pillar">
+          <i class="fa-solid fa-clock"></i>
+          <span>Entrega a tiempo</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GALERÍA ========== -->
+  <section class="section gallery" id="galeria">
+    <div class="container">
+      <div class="section-head section-head--center reveal">
+        <span class="section-tag">Nuestro trabajo</span>
+        <h2 class="section-title">Resultados que<br /><em>hablan solos</em></h2>
+      </div>
+
+      <div class="gallery__grid">
+        <div class="gallery__item gallery__item--wide reveal">
+          <img src="imagenes/resultado_1.jpeg" />
+          <div class="gallery__label">Detailing Premium</div>
+        </div>
+        <div class="gallery__item reveal">
+          <img src="imagenes/pintura_tercel.jpeg" alt="Pintura completa" />
+          <div class="gallery__label">Pintura Completa</div>
+        </div>
+        <div class="gallery__item reveal">
+          <img src="imagenes/pulimineto.jpeg" alt="Auto pulido" />
+          <div class="gallery__label">Pulido de Pintura</div>
+        </div>
+        <div class="gallery__item reveal">
+          <img src="imagenes/resultado2.jpeg" alt="Reparación de pintura" />
+          <div class="gallery__label">Reparación completa</div>
+        </div>
+        <div class="gallery__item reveal">
+          <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=600&q=75" alt="Auto deportivo" />
+          <div class="gallery__label">Detailing Deportivo</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACTO ========== -->
+  <section class="section contact" id="contacto">
+    <div class="container">
+      <div class="section-head section-head--center reveal">
+        <span class="section-tag">Hablemos</span>
+        <h2 class="section-title">Contáctanos<br /><em>directamente</em></h2>
+      </div>
+
+      <div class="contact__grid contact__grid--centered">
+
+        <!-- Info de contacto -->
+        <div class="contact__info reveal">
+          <div class="contact__info-block">
+            <i class="fa-solid fa-phone"></i>
+            <div>
+              <strong>Teléfono</strong>
+              <a href="tel:+50764202398">+507 6420-2398</a>
+            </div>
+          </div>
+          <div class="contact__info-block">
+            <i class="fa-brands fa-whatsapp"></i>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/50764202398" target="_blank" rel="noopener">Escríbenos directo</a>
+            </div>
+          </div>
+          <div class="contact__info-block">
+            <i class="fa-solid fa-location-dot"></i>
+            <div>
+              <strong>Ubicación</strong>
+              <span>Cañacillas,Santa María,Herrera,Panamá</span>
+            </div>
+          </div>
+          <div class="contact__info-block">
+            <i class="fa-solid fa-clock"></i>
+            <div>
+              <strong>Horario</strong>
+              <span>Lun–Sáb: 8:00am – 6:00pm</span>
+            </div>
+          </div>
+
+          <a
+            href="https://wa.me/50764202398?text=Hola%20Carrera's,%20quiero%20agendar%20un%20servicio"
+            class="btn btn--whatsapp"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-brands fa-whatsapp"></i> Agendar por WhatsApp
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <a href="#inicio" class="logo logo--footer">
+          <span class="logo__mark">C</span>
+          <span class="logo__text">arrera's</span>
+        </a>
+        <p>Tu auto en las mejores manos.<br />Calidad profesional en cada servicio.</p>
+      </div>
+
+      <div class="footer__links">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__social">
+        <h4>Síguenos</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"  class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="TikTok"    class="social-link"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://wa.me/50764202398" aria-label="WhatsApp" class="social-link" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span id="year"></span> Carrera's. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ========== WHATSAPP FLOTANTE ========== -->
+  <a
+    href="https://wa.me/50764202398?text=Hola%20Carrera's,%20quiero%20información%20sobre%20sus%20servicios"
+    class="whatsapp-float"
+    target="_blank"
+    rel="noopener"
+    aria-label="Contactar por WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+    <span class="whatsapp-float__tooltip">¡Escríbenos!</span>
+  </a>
+
+  <!-- ========== BACK TO TOP ========== -->
+  <button class="back-top" id="backTop" aria-label="Volver arriba">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
